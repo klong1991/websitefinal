@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Klong's Amazing Zooming Dog</title>
+</head>
+<body>
+    <div class="main">
+        <div class="nav">
+            <h1>Klong's Amazing CSS Practise</h1>
+        </div>
+        <div class="content">
+            <div class="content2">
+                <div class="zoom">
+                    <img src="images/toby.jpg">
+                </div>
+            </div>
+            <div class="content2">
+                <div class="content3">
+
+                </div>
+                <div class="content4">
+
+                </div>
+                <div class="content4">
+
+                </div>
+                <div class="content3">
+
+                </div>
+            </div>
+
+        </div>
+        <div class="footer">
+            <button onclick="showdiv()">Click Me</button><br><br>
+
+            <div id="magic">
+                <h1>My dog is called toby</h1>
+            </div>
+        </div>
+    </div>
+    <script>
+        function showdiv() {
+            var x = document.getElementById("magic");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
+</body>
+
+</html>
